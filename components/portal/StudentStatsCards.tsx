@@ -24,9 +24,10 @@ export default function StudentStatsCards() {
 
   return (
     <section className="-mx-4 overflow-x-auto px-4 sm:mx-0 sm:px-0">
-      
+
       {/* HORIZONTAL MOBILE SCROLL */}
       <div className="flex gap-4 pb-2 sm:grid sm:grid-cols-2 sm:gap-6 xl:grid-cols-4">
+
         {stats.map((stat) => (
           <div
             key={stat.label}
@@ -34,7 +35,7 @@ export default function StudentStatsCards() {
               min-w-[240px]
               flex-shrink-0
               rounded-[2rem]
-              border border-[#58B947]/10
+              border border-[#E5006D]/10
               bg-white
               p-5
               shadow-lg
@@ -47,9 +48,10 @@ export default function StudentStatsCards() {
               lg:p-8
             "
           >
+
             {/* CARD TOP */}
             <div className="flex items-center gap-4">
-              
+
               {/* ICON */}
               <div className="
                 flex
@@ -59,8 +61,9 @@ export default function StudentStatsCards() {
                 justify-center
                 rounded-2xl
                 bg-gradient-to-br
-                from-[#58B947]
-                to-[#2E7D32]
+                from-[#E5006D]
+                via-[#D81B60]
+                to-[#C2185B]
                 text-2xl
                 text-white
                 shadow-xl
@@ -77,7 +80,7 @@ export default function StudentStatsCards() {
                   text-3xl
                   font-black
                   leading-none
-                  text-[#2E7D32]
+                  text-[#C2185B]
                   sm:text-4xl
                 ">
                   {stat.value}
@@ -96,22 +99,24 @@ export default function StudentStatsCards() {
               </div>
             </div>
 
-            {/* OPTIONAL PROGRESS BAR */}
+            {/* PROGRESS BAR */}
             <div className="mt-5">
-              <div className="h-2 overflow-hidden rounded-full bg-[#58B947]/10">
-                <div className="h-full w-[75%] rounded-full bg-gradient-to-r from-[#58B947] to-[#A5D66F]" />
+              <div className="h-2 overflow-hidden rounded-full bg-pink-100">
+                <div className="h-full w-[75%] rounded-full bg-gradient-to-r from-[#E5006D] via-[#D81B60] to-[#C2185B]" />
               </div>
             </div>
+
           </div>
         ))}
       </div>
 
       {/* MOBILE SCROLL HINT */}
       <div className="mt-3 flex justify-center sm:hidden">
-        <div className="rounded-full bg-[#58B947]/10 px-4 py-2 text-xs font-semibold text-[#2E7D32]">
+        <div className="rounded-full bg-pink-50 px-4 py-2 text-xs font-semibold text-[#C2185B] border border-[#E5006D]/10">
           ← Swipe for more →
         </div>
       </div>
+
     </section>
   );
 }

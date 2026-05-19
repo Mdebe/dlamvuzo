@@ -6,8 +6,9 @@ export default function AssignmentsSection() {
   ];
 
   return (
-    <section className="rounded-[2rem] bg-white p-8 shadow-lg">
-      <h2 className="mb-8 text-3xl font-black text-[#2E7D32]">
+    <section className="rounded-[2rem] bg-white p-8 shadow-lg border border-[#E5006D]/10">
+
+      <h2 className="mb-8 text-3xl font-black text-[#C2185B]">
         Assignments
       </h2>
 
@@ -15,11 +16,14 @@ export default function AssignmentsSection() {
         {assignments.map((assignment) => (
           <div
             key={assignment}
-            className="rounded-2xl border border-[#E5B324]/10 bg-[#E5B324]/5 p-5"
+            className="rounded-2xl border border-[#E5006D]/10 bg-pink-50 p-5 transition hover:bg-pink-100"
           >
+
             <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+
+              {/* LEFT */}
               <div>
-                <h3 className="text-xl font-bold text-[#2E7D32]">
+                <h3 className="text-xl font-bold text-[#C2185B]">
                   {assignment}
                 </h3>
 
@@ -28,13 +32,16 @@ export default function AssignmentsSection() {
                 </p>
               </div>
 
-              <button className="rounded-xl bg-[#58B947] px-5 py-3 font-semibold text-white transition hover:bg-[#2E7D32]">
+              {/* BUTTON */}
+              <button className="rounded-xl bg-[#E5006D] px-5 py-3 font-semibold text-white shadow-md transition hover:bg-[#D81B60] hover:scale-[1.02] active:scale-95">
                 Submit
               </button>
+
             </div>
           </div>
         ))}
       </div>
+
     </section>
   );
 }
