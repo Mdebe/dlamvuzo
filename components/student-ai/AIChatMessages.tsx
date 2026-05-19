@@ -15,11 +15,11 @@ const messages = [
 
 export default function AIChatMessages() {
   return (
-    <div className="flex-1 space-y-6 overflow-y-auto bg-gradient-to-b from-white to-[#F3FFF4] p-4 sm:p-6 lg:p-8">
+    <div className="flex-1 space-y-6 overflow-y-auto bg-gradient-to-b from-white via-[#FFF0F6] to-[#FCE4EC] p-4 sm:p-6 lg:p-8">
       
-      {/* HEADER NOTE (optional brand touch) */}
+      {/* HEADER NOTE */}
       <div className="mb-6 text-center">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#2E7D32]">
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#C2185B]">
           Dlamvuzo AI Learning Assistant
         </p>
       </div>
@@ -36,8 +36,8 @@ export default function AIChatMessages() {
           <div
             className={`max-w-[90%] rounded-[2rem] px-5 py-4 shadow-lg sm:max-w-[75%] transition-all duration-300 ${
               message.role === 'student'
-                ? 'bg-gradient-to-br from-[#2E7D32] to-[#58B947] text-white'
-                : 'border border-[#58B947]/15 bg-white text-gray-700'
+                ? 'bg-gradient-to-br from-[#E5006D] via-[#D81B60] to-[#C2185B] text-white shadow-[0_15px_40px_rgba(229,0,109,0.25)]'
+                : 'border border-[#E5006D]/10 bg-white text-gray-700'
             }`}
           >
             <p className="text-sm leading-7 sm:text-base">
