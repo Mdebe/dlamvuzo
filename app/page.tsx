@@ -6,6 +6,7 @@ import AboutSection from '@/components/home/AboutSection';
 import AcademicsSection from '@/components/home/AcademicsSection';
 import NewsSection from '@/components/home/NewsSection';
 import CTASection from '@/components/home/CTASection';
+import FloatingAIBtn from '@/components/home/FloatingAIBtn';
 
 export default function HomePage() {
   return (
@@ -18,6 +19,7 @@ export default function HomePage() {
       <NewsSection />
       <CTASection />
       <Footer />
+      <FloatingAIBtn />
     </main>
   );
 }
